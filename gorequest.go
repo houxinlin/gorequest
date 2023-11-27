@@ -910,7 +910,7 @@ func (s *SuperAgent) SendFile(file interface{}, args ...interface{}) *SuperAgent
 	}
 
 	if (fieldname == "file" && !skipFileNumbering) || fieldname == "" {
-		fieldname = "file" + strconv.Itoa(len(s.FileData)+1)
+		
 	}
 
 	switch v := reflect.ValueOf(file); v.Kind() {
